@@ -53,10 +53,23 @@ $(document).ready(function(){
             firebase.auth().signOut();
             location.reload();
         });
+
+        $(document).on("click", "#update-btn", function(event){
+            event.preventDefault();
+
+            var userName = $("#username").val();
+            var user = firebase.auth().currentUser;
+
+            user.updateProfile({
+                displayName: userName
+            }).then(function(){
+                $(".sa").text("asdasd")
+            })
+        });
     
         firebase.auth().onAuthStateChanged(firebaseUser => {
             if(firebaseUser) {
-                $(".subtitle").html("Welcome " + firebaseUser.email);
+                $(".subtitle").html("Welcome " + firebaseUser.displayName);
                 $("#get-started").on("click", function(){
                     $(".inner").addClass("fadeout");
                     setTimeout(function(){
