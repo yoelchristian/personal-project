@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hideme {
+    display: none !important;
+}
+
+.landing-page {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("../images/violin-background.jpg");
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.landing-page .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.landing-page-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.landing-page-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 241, 241);
+    font-size: 450%;
+    letter-spacing: 15px;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 241, 241);
+    margin-top: -30px;
+}
+
+.fadein {
+    opacity: 1;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadeout {
+    opacity: 0;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.form-container {
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.slidedown {
+    margin-top: 200px;
+    overflow-y: hidden;
+    -moz-transition: margin-top 1s ease-in-out;
+    -o-transition: margin-top 1s ease-in-out;
+    -webkit-transition: margin-top 1s ease-in-out;
+    transition: margin-top 1s ease-in-out;
+}
+
+.enlargefont {
+    font-size: 150%;
+    overflow-y: hidden;
+    -moz-transition: font-size 1.5s ease-in-out;
+    -o-transition: font-size 1.5s ease-in-out;
+    -webkit-transition: font-size 1.5s ease-in-out;
+    transition: font-size 1.5s ease-in-out;
+}
+
+.gigafont {
+    font-size: 1000px;
+}
